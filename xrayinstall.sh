@@ -713,7 +713,9 @@ installTLS() {
 		fi
 	elif [[ -d "$HOME/.acme.sh" ]] && [[ ! -f "$HOME/.acme.sh/${tlsDomain}_ecc/${tlsDomain}.cer" || ! -f "$HOME/.acme.sh/${tlsDomain}_ecc/${tlsDomain}.key" ]]; then
 		echoContent green " ---> 安装TLS证书"
+		$HOME/.acme.sh/acme.sh   --set-default-ca  --server  letsencrypt
 		if [[ -n "${pingIPv6}" ]]; then
+		        
 			sudo "$HOME/.acme.sh/acme.sh" --issue -d "${tlsDomain}" --standalone -k ec-256 --listen-v6 >/dev/null
 		else
 			sudo "$HOME/.acme.sh/acme.sh" --issue -d "${tlsDomain}" --standalone -k ec-256 >/dev/null
@@ -829,7 +831,7 @@ installCronTLS() {
 # 更新证书
 renewalTLS() {
 	echoContent skyBlue "\n进度  1/1 : 更新证书"
-
+        $HOME/.acme.sh/acme.sh   --set-default-ca  --server  letsencrypt
 	if [[ -d "$HOME/.acme.sh/${currentHost}_ecc" ]] && [[ -f "$HOME/.acme.sh/${currentHost}_ecc/${currentHost}.key" ]] && [[ -f "$HOME/.acme.sh/${currentHost}_ecc/${currentHost}.cer" ]]; then
 		modifyTime=$(stat $HOME/.acme.sh/${currentHost}_ecc/${currentHost}.cer | sed -n '7,6p' | awk '{print $2" "$3" "$4" "$5}')
 
