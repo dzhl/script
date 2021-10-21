@@ -1,0 +1,45 @@
+[Adblock Plus 2.0]
+! Title: NoCoin Filter List
+! Expires: 1 days (update frequency)
+! Version: 195
+! Last modified: 30 Jan 2021
+! Homepage: https://github.com/hoshsadiq/adblock-nocoin-list/
+! Contribute: https://github.com/hoshsadiq/adblock-nocoin-list/issues
+! License: https://mit-license.org/
+! Description: This filter disables browser based miners such as coin-hive
+!-------------------------------------------------------------------------------
+||106.11.43.70
+||dualstack-m5.amap.com
+||m5.amap.com^
+||myfavor.eastmoney.com^
+||gbfek.dfcfw.com^
+||myfavor1.eastmoney.com^
+||awaken.amap.com^
+||acs.m.taobao.com^
+||api.htp.hubcloud.com.cn:45600^
+||v.adx.hubcloud.com.cn^
+||res1.hubcloud.com.cn^
+||v.adx.hubcloud.com.cn^
+||sdktmp.hubcloud.com.cn^
+||v.ads.hubcloud.com.cn^
+||lbs.map.qq.com^
+||sdk.beizi.biz^
+@@||edge.activity.windows.com
+||lbs.netease.im^
+||ap1.qiyukf.com^
+||short-video.ztjy61.cn^
+||lbs.netease.im^
+||ap1.qiyukf.com^
+||short-video.ztjy61.cn^
+||adlog-ztjy.szy.cn^
+||logserver.ztjy61.cn^
+||userlink.alicdn.com^
+||api.szy.cn^
+||zths.szy.cn^
+||ap1.qiyukf.com^
+||web.szy.cn^
+||analytics.map.qq.com^
+||tbsrecovery.imtt.qq.com^
+||a.xinxianshilb.com^
+||j.sousoudus.com^
+||wcp.taobao.com^
